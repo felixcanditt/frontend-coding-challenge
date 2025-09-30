@@ -6,7 +6,6 @@ interface StepperProps {
 }
 
 export default function Stepper({currentStep, steps}: StepperProps) {
-    /*TODO: Replace this with the actual Stepper implementation*/
     return (
         <div
             className={
@@ -14,8 +13,13 @@ export default function Stepper({currentStep, steps}: StepperProps) {
             }
         >
             {steps.map((step, index) => (
-                <div key={index}
-                     className={currentStep >= index ? "text-green-500" : ""}>{currentStep}, {index}, {step.title}</div>
+                <div key={index}>
+                    <span
+                        className={`leading-[16px] lg:leading-[24px] text-[12px] lg:text-[16px] font-semibold ${currentStep >= index ? "text-gray-700" : "text-gray-500"}`}
+                    >
+                        {step.title}
+                    </span>
+                </div>
             ))}
         </div>
     );
