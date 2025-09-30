@@ -1,5 +1,5 @@
 export interface Step {
-	title: string;
+    title: string;
 }
 
-export const steps: Step[] = [{title: 'a'}, {title: 'b'}, {title: 'c'}, {title: 'd'}];
+export const steps: Step[] = [{title: 'Service'}, {title: 'Termin'}, {title: 'Fahrzeug'}, {title: 'Kontakt'}];
