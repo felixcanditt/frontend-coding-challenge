@@ -14,7 +14,8 @@ export default function Stepper({currentStep, steps}: StepperProps) {
             }
         >
             {steps.map((step, index) => (
-                <span key={index}>{step.title}</span>
+                <div key={index}
+                     className={currentStep >= index ? "text-green-500" : ""}>{currentStep}, {index}, {step.title}</div>
             ))}
         </div>
     );
