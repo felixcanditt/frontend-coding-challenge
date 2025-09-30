@@ -1,6 +1,8 @@
-interface StepperProps {}
+interface StepperProps {
+	currentStep: number
+}
 
-export default function Stepper() {
+export default function Stepper({currentStep }: StepperProps) {
 	/*TODO: Replace this with the actual Stepper implementation*/
 	return (
 		<div
@@ -9,6 +11,7 @@ export default function Stepper() {
 			}
 		>
 			<code className={"text-2xl"}>{"<Stepper />"}</code>
+			<div>{currentStep}</div>
 		</div>
 	);
 }
