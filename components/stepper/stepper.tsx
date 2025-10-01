@@ -7,7 +7,7 @@ interface StepperProps {
 
 export default function Stepper({currentStep, steps}: StepperProps) {
     return (
-        <ul className="flex justify-center">
+        <ul className="flex justify-center flex-wrap gap-y-2">
             {steps.map((step, index) => (
                 <li key={index} className="flex">
                     {index != 0 &&
