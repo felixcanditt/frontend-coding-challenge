@@ -28,7 +28,7 @@ export default function Stepper({currentStep, steps}: StepperProps) {
                         </div>
                         <div className="mt-[2px] lg:mt-[4px] w-[30px] lg:w-[40px] flex justify-center">
                             <span
-                                className={`leading-[16px] lg:leading-[24px] text-[12px] lg:text-[16px] font-semibold ${currentStep >= index ? "text-gray-700" : "text-gray-500"}`}
+                                className={`max-w-[75px] lg:max-w-[100px] break-words hyphens-auto leading-[16px] lg:leading-[24px] text-[12px] lg:text-[16px] font-semibold ${currentStep >= index ? "text-gray-700" : "text-gray-500"}`}
                             >
                                 {step.title}
                             </span>
